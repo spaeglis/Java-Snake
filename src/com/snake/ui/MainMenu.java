@@ -8,6 +8,8 @@ public class MainMenu extends JFrame {
 	private JButton playButton;
 	private JButton quitButton;
 	private JLabel gameLabel;
+	private static final int WINDOW_WIDTH = 500;
+	private static final int WINDOW_HEIGHT = 500;
 	
 	public MainMenu() {
 		Container cp = getContentPane();
@@ -36,7 +38,7 @@ public class MainMenu extends JFrame {
 		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setTitle("Snake");
-		setSize(500, 500);
+		setSize(WINDOW_WIDTH, WINDOW_HEIGHT);
 		
 	}
 	

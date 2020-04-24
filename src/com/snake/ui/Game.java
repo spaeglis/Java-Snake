@@ -5,6 +5,7 @@ import java.awt.event.*;
 
 public class Game {
 	private MainMenu menu;
+	private PlayWindow playWindow;
 	
 	public Game() {
 		menu = new MainMenu();
@@ -22,7 +23,9 @@ public class Game {
 	}
 	
 	public void playGame() {
-		int i = 1;
+		playWindow = new PlayWindow();
+		menu.setVisible(false);
+		playWindow.setVisible(true);
 	}
 
 	public static void main(String[] args) {
